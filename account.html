@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230828145052">
 </head>
 
 <body>
@@ -45,35 +45,152 @@
           <div class="ak-account__body" data-tabs-init="account-tabs">
             <aside class="ak-account__aside">
               <ul class="ak-account__aside-list">
-                <li class="ak-account__aside-item"><button class="ak-account__aside-button"
-                    data-tabs-btn>Главная</button></li>
-                <li class="ak-account__aside-item"><button class="ak-account__aside-button" data-tabs-btn>Мои
+                <li class="ak-account__aside-item"><button
+                    class="ak-account__aside-button account-tabs">Главная</button></li>
+                <li class="ak-account__aside-item"><button class="ak-account__aside-button account-tabs">Мои
                     боксы</button></li>
-                <li class="ak-account__aside-item"><button class="ak-account__aside-button" data-tabs-btn>Мои
+                <li class="ak-account__aside-item"><button class="ak-account__aside-button account-tabs">Мои
                     данные</button></li>
-                <li class="ak-account__aside-item"><button class="ak-account__aside-button" data-tabs-btn>Способы
+                <li class="ak-account__aside-item"><button class="ak-account__aside-button account-tabs">Способы
                     оплаты</button></li>
-                <li class="ak-account__aside-item"><button class="ak-account__aside-button" data-tabs-btn>Смена
+                <li class="ak-account__aside-item"><button class="ak-account__aside-button account-tabs">Смена
                     пароля</button></li>
               </ul>
             </aside>
             <div class="ak-account__content">
-              <div class="ak-account__content-tab" data-tabs-content></div>
-              <div class="ak-account__content-tab" data-tabs-content></div>
-              <div class="ak-account__content-tab" data-tabs-content>
-                <div class="ak-account__content-block block-account-data ">
+              <div class="ak-account__content-tab account-content"></div>
+              <div class="ak-account__content-tab account-content"></div>
+              <div class="ak-account__content-tab account-content">
+                <div class="ak-account__content-block block-account" data-tabs-init="account-data-tabs">
+                  <form class="ak-account__form form-account-data account-data-content">
+                    <h4 class="ak-account__content-title">Основная информация</h4>
+                    <div class="account-data">
+                      <div class="ak-account__form-wp-img">
+                        <label>
+                          <div class="ak-account__form-img-preview">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 237">
+                              <path
+                                d="M2 118.5C2 133.799 5.01336 148.948 10.868 163.083C16.7227 177.217 25.304 190.06 36.1221 200.878C46.9401 211.696 59.7829 220.277 73.9174 226.132C88.0518 231.987 103.201 235 118.5 235C133.799 235 148.948 231.987 163.083 226.132C177.217 220.277 190.06 211.696 200.878 200.878C211.696 190.06 220.277 177.217 226.132 163.083C231.987 148.948 235 133.799 235 118.5C235 103.201 231.987 88.0518 226.132 73.9174C220.277 59.7829 211.696 46.9401 200.878 36.1221C190.06 25.304 177.217 16.7227 163.083 10.868C148.948 5.01336 133.799 2 118.5 2C103.201 2 88.0518 5.01336 73.9174 10.868C59.7829 16.7227 46.9401 25.304 36.1221 36.1221C25.304 46.9401 16.7227 59.7829 10.868 73.9174C5.01336 88.0518 2 103.201 2 118.5Z"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M43.0078 207.156C46.2117 196.493 52.7675 187.146 61.7028 180.503C70.638 173.86 81.4767 170.274 92.6109 170.277H144.389C155.537 170.273 166.389 173.868 175.331 180.527C184.273 187.185 190.826 196.552 194.018 207.234M79.6665 92.6107C79.6665 102.91 83.7578 112.787 91.0405 120.07C98.3232 127.353 108.201 131.444 118.5 131.444C128.799 131.444 138.676 127.353 145.959 120.07C153.242 112.787 157.333 102.91 157.333 92.6107C157.333 82.3114 153.242 72.434 145.959 65.1514C138.676 57.8687 128.799 53.7773 118.5 53.7773C108.201 53.7773 98.3232 57.8687 91.0405 65.1514C83.7578 72.434 79.6665 82.3114 79.6665 92.6107Z"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                          <span>Загрузить фото</span>
+                          <input type="file" name="img" accept="image/*">
+                        </label>
+                      </div>
+                      <div class="ak-account__form-column">
+                        <div class="ak-form__wp-input">
+                          <input type="text" class="ak-account__form-input" name="familyname" placeholder="Фамилия">
+                        </div>
+                        <div class="ak-form__wp-input">
+                          <input type="text" class="ak-account__form-input" name="firstname" placeholder="Имя">
+                        </div>
+                        <div class="ak-form__wp-input">
+                          <input type="text" class="ak-account__form-input" name="patronymic" placeholder="Отчество">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="ak-account__form form-account-contacts account-data-content">
+                    <h4 class="ak-account__content-title">Контактные данные</h4>
+                    <div class="form-account-contacts__column">
+                      <form class="ak-form__wp-input ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37">
+                          <path
+                            d="M24.3333 8.77778C25.3647 8.77778 26.3539 9.1875 27.0832 9.91681C27.8125 10.6461 28.2222 11.6353 28.2222 12.6667M24.3333 1C27.4275 1 30.395 2.22916 32.5829 4.41709C34.7708 6.60501 36 9.57247 36 12.6667M4.88889 2.94444H12.6667L16.5556 12.6667L11.6944 15.5833C13.7769 19.8058 17.1942 23.2231 21.4167 25.3056L24.3333 20.4444L34.0556 24.3333V32.1111C34.0556 33.1425 33.6458 34.1317 32.9165 34.861C32.1872 35.5903 31.1981 36 30.1667 36C22.5819 35.5391 15.4281 32.3182 10.0549 26.9451C4.68181 21.5719 1.46093 14.4181 1 6.83333C1 5.80194 1.40972 4.81278 2.13903 4.08347C2.86834 3.35417 3.85749 2.94444 4.88889 2.94444Z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="tel" name="username" placeholder="Номер телефона" class="ak-form__input">
+                        <button type="submit" class="change-data-btn">Изменить</button>
+                      </form>
+                      <form class="ak-form__wp-input">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 37 37">
+                          <path
+                            d="M14.6111 35.9991V23.3602C14.6111 21.5553 13.8941 19.8243 12.6178 18.548C11.3415 17.2717 9.6105 16.5547 7.80556 16.5547M7.80556 16.5547C6.00061 16.5547 4.26959 17.2717 2.9933 18.548C1.71701 19.8243 1 21.5553 1 23.3602V35.9991H36V24.3325C36 22.2697 35.1806 20.2914 33.7219 18.8327C32.2633 17.3741 30.285 16.5547 28.2222 16.5547H7.80556Z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M18.5026 16.5556V1H26.2804L30.1693 4.88889L26.2804 8.77778H18.5026M6.83594 24.3333H8.78038"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="email" name="email" placeholder="Электронная почта" class="ak-form__input">
+                        <button type="submit" class="change-data-btn">Изменить</button>
+                      </form>
+                      <form class="ak-form__wp-input">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37">
+                          <path
+                            d="M27.25 1V8.77778M9.75 1V8.77778M1 16.5556H36M16.3125 24.3333H18.5V30.1667M1 8.77778C1 7.74638 1.46094 6.75723 2.28141 6.02792C3.10188 5.29861 4.21468 4.88889 5.375 4.88889H31.625C32.7853 4.88889 33.8981 5.29861 34.7186 6.02792C35.5391 6.75723 36 7.74638 36 8.77778V32.1111C36 33.1425 35.5391 34.1317 34.7186 34.861C33.8981 35.5903 32.7853 36 31.625 36H5.375C4.21468 36 3.10188 35.5903 2.28141 34.861C1.46094 34.1317 1 33.1425 1 32.1111V8.77778Z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="date" name="birthday" placeholder="Дата рождения" class="ak-form__input">
+                        <button type="submit" class="change-data-btn">Изменить</button>
+                      </form>
+                    </div>
+                  </div>
+                  <form class="ak-account__form form-account-passport account-data-content">
+                    <h4 class="ak-account__content-title">Паспортные данные</h4>
+                    <div class="account-passport">
+                      <div class="account-passport__wp-img">
+                        <label>
+                          <span class="account-passport__img-title">ФОТО ПАСПОРТА</span>
+                          <span class="account-passport__img-download">загрузить фото</span>
+                          <input type="file" name="img" accept="image/*">
+                        </label>
+                      </div>
+                      <div class="account-passport__block">
+                        <div class="account-passport__row">
+                          <div class="account-passport__column">
+                            <div class="ak-form__wp-input">
+                              <input type="text" class="ak-account__form-input" name="series"
+                                placeholder="Серия паспорта">
+                            </div>
+                            <div class="ak-form__wp-input">
+                              <input type="text" class="ak-account__form-input" name="issue_date"
+                                placeholder="Дата выдачи">
+                            </div>
+                          </div>
+                          <div class="account-passport__column">
+                            <div class="ak-form__wp-input">
+                              <input type="text" class="ak-account__form-input" name="number"
+                                placeholder="Номер паспорта">
+                            </div>
+                            <div class="ak-form__wp-input">
+                              <input type="text" class="ak-account__form-input" name="subdivision"
+                                placeholder="Код подразделения">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="account-passport__row">
+                          <div class="ak-form__wp-input wp-input-subdivision">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37">
+                              <path
+                                d="M1 36V32.1111C1 30.0483 1.81944 28.07 3.27806 26.6114C4.73667 25.1528 6.71498 24.3333 8.77778 24.3333H16.5556C18.6184 24.3333 20.5967 25.1528 22.0553 26.6114C23.5139 28.07 24.3333 30.0483 24.3333 32.1111V36M26.2778 1.25278C27.9508 1.68114 29.4337 2.65414 30.4926 4.01838C31.5516 5.38262 32.1264 7.0605 32.1264 8.7875C32.1264 10.5145 31.5516 12.1924 30.4926 13.5566C29.4337 14.9209 27.9508 15.8939 26.2778 16.3222M36 36V32.1111C35.9901 30.3945 35.4126 28.7293 34.3575 27.3752C33.3023 26.0211 31.8288 25.0541 30.1667 24.625M4.88889 8.77778C4.88889 10.8406 5.70833 12.8189 7.16695 14.2775C8.62556 15.7361 10.6039 16.5556 12.6667 16.5556C14.7295 16.5556 16.7078 15.7361 18.1664 14.2775C19.625 12.8189 20.4444 10.8406 20.4444 8.77778C20.4444 6.71498 19.625 4.73667 18.1664 3.27806C16.7078 1.81944 14.7295 1 12.6667 1C10.6039 1 8.62556 1.81944 7.16695 3.27806C5.70833 4.73667 4.88889 6.71498 4.88889 8.77778Z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <input type="text" class="ak-account__form-input input-subdivision" name="issued_by"
+                              placeholder="Кем выдан паспорт">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
 
+                  <ul class="ak-account__content-list-tabs">
+                    <li class="ak-account__content-tabs"><button
+                        class=" ak-account__form-button ak-button account-data-tabs-btn _none">Основная
+                        информация</button></li>
+                    <li class="ak-account__content-tabs"><button
+                        class="ak-account__form-button ak-button account-data-tabs-btn">Контактные
+                        данные</button></li>
+                    <li class="ak-account__content-tabs"><button
+                        class="ak-account__form-button ak-button account-data-tabs-btn">Паспортные
+                        данные</button></li>
+                  </ul>
                 </div>
-                <ul class="ak-account__content-list-tabs">
-                  <li class="ak-account__content-tabs"><button class=" ak-account__form-button ak-button">Основная
-                      информация</button></li>
-                  <li class="ak-account__content-tabs"><button class="ak-account__form-button ak-button">Контактные
-                      данные</button></li>
-                  <li class="ak-account__content-tabs"><button class="ak-account__form-button ak-button">Паспортные
-                      данные</button></li>
-                </ul>
               </div>
-              <div class="ak-account__content-tab" data-tabs-content>
+              <div class="ak-account__content-tab account-content">
                 <div class="ak-account__content-block block-payment-methods">
                   <div class="ak-account__content-option">
                     <span>Вариант №1</span>
@@ -92,7 +209,7 @@
                   </div>
                 </div>
               </div>
-              <div class="ak-account__content-tab" data-tabs-content>
+              <div class="ak-account__content-tab account-content">
                 <div class="ak-account__content-block block-password-change">
                   <h4 class="ak-account__content-title">Смена пароля</h4>
                   <form class="ak-account__form form-password-change">
@@ -105,7 +222,7 @@
                           d="M7.17969 17.4211V9.21053C7.17969 7.03296 8.04733 4.94458 9.59175 3.40481C11.1362 1.86503 13.2308 1 15.415 1C17.5991 1 19.6938 1.86503 21.2382 3.40481C22.7826 4.94458 23.6503 7.03296 23.6503 9.21053V17.4211M23.6503 33.8421H36.0032M29.8267 27.6842V40M13.3562 27.6842C13.3562 28.2286 13.5731 28.7507 13.9592 29.1356C14.3453 29.5206 14.8689 29.7368 15.415 29.7368C15.961 29.7368 16.4847 29.5206 16.8708 29.1356C17.2569 28.7507 17.4738 28.2286 17.4738 27.6842C17.4738 27.1398 17.2569 26.6177 16.8708 26.2328C16.4847 25.8478 15.961 25.6316 15.415 25.6316C14.8689 25.6316 14.3453 25.8478 13.9592 26.2328C13.5731 26.6177 13.3562 27.1398 13.3562 27.6842Z"
                           stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <input type="password" name="old-password" placeholder="Старый пароль" class="ak-form__input">
+                      <input type="password" name="current_password" placeholder="Старый пароль" class="ak-form__input">
                     </div>
                     <div class="ak-form__wp-input">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 41">
@@ -116,7 +233,7 @@
                           d="M7.5 18.3333V9.66667C7.5 7.36812 8.41309 5.16372 10.0384 3.53841C11.6637 1.91309 13.8681 1 16.1667 1C18.4652 1 20.6696 1.91309 22.2949 3.53841C23.9202 5.16372 24.8333 7.36812 24.8333 9.66667V18.3333M14 29.1667C14 29.7413 14.2283 30.2924 14.6346 30.6987C15.0409 31.1051 15.592 31.3333 16.1667 31.3333C16.7413 31.3333 17.2924 31.1051 17.6987 30.6987C18.1051 30.2924 18.3333 29.7413 18.3333 29.1667C18.3333 28.592 18.1051 28.0409 17.6987 27.6346C17.2924 27.2283 16.7413 27 16.1667 27C15.592 27 15.0409 27.2283 14.6346 27.6346C14.2283 28.0409 14 28.592 14 29.1667Z"
                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <input type="password" name="new-password" placeholder="Новый пароль" class="ak-form__input">
+                      <input type="password" name="password" placeholder="Новый пароль" class="ak-form__input">
                     </div>
                     <div class="ak-form__wp-input">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 41">
@@ -127,7 +244,7 @@
                           d="M7.17969 17.4211V9.21053C7.17969 7.03296 8.04733 4.94458 9.59175 3.40481C11.1362 1.86503 13.2308 1 15.415 1C17.5991 1 19.6938 1.86503 21.2382 3.40481C22.7826 4.94458 23.6503 7.03296 23.6503 9.21053V17.4211M23.6503 33.8421H36.0032M29.8267 27.6842V40M13.3562 27.6842C13.3562 28.2286 13.5731 28.7507 13.9592 29.1356C14.3453 29.5206 14.8689 29.7368 15.415 29.7368C15.961 29.7368 16.4847 29.5206 16.8708 29.1356C17.2569 28.7507 17.4738 28.2286 17.4738 27.6842C17.4738 27.1398 17.2569 26.6177 16.8708 26.2328C16.4847 25.8478 15.961 25.6316 15.415 25.6316C14.8689 25.6316 14.3453 25.8478 13.9592 26.2328C13.5731 26.6177 13.3562 27.1398 13.3562 27.6842Z"
                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <input type="password" name="confirm-password" placeholder="Подтвердить новый пароль"
+                      <input type="password" name="repassword" placeholder="Подтвердить новый пароль"
                         class="ak-form__input">
                     </div>
                     <button type="button" class="ak-account__form-button ak-button">Подтвердить</button>
@@ -232,7 +349,7 @@
       <span>Успешная авторизация!</span>
     </div>
   </div>
-  <script src="js/app.min.js"></script>
+  <script src="js/app.min.js?_v=20230828145052"></script>
 </body>
 
 </html>
