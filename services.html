@@ -6,35 +6,41 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230830032936">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230904133647">
 </head>
 
 <body>
   <div class="ak-wrapper">
     <header class="header">
-	<div class="header__container ak-container">
-		<div class="header__body">
-			<div class="header__content">
-				<a href="index.html" class="header__logo">
-					<img src="img/logo.png" alt="logo" class="header__logo-img">
-				</a>
-				<nav class="header__navigate">
-					<ul class="header__list">
-						<li class="header__li"><a href="#" class="header__link">Боксы и цены</a></li>
-						<li class="header__li"><a href="box.html" class="header__link">Как выбрать бокс?</a></li>
-						<li class="header__li"><a href="faq.html" class="header__link">FAQ</a></li>
-						<li class="header__li"><a href="services.html" class="header__link">Услуги</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header__wp-buttons" data-da=".header__navigate,479,1">
-				<a href="authorization.html" class="header__btn-auth ak-button"><span>Вход</span></a>
-				<a href="registration.html" class="header__btn-register ak-button"><span>Регистрация</span></a>
-			</div>
-			<div class="ak-header-burger">
-				<span></span>
-				<span></span>
-				<span></span>
+	<div class="header__container">
+		<div class="ak-container">
+			<div class="header__body">
+				<div class="header__content">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.png" alt="logo" class="header__logo-img">
+					</a>
+					<nav class="header__navigate">
+						<ul class="header__list">
+							<li class="header__li"><a href="#" class="header__link">Боксы и цены</a></li>
+							<li class="header__li"><a href="box.html" class="header__link">Как выбрать бокс?</a></li>
+							<li class="header__li"><a href="faq.html" class="header__link">FAQ</a></li>
+							<li class="header__li"><a href="services.html" class="header__link">Услуги</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__wp-buttons" data-da=".header__navigate,479,1">
+					<a href="authorization.html" class="header__link-auth header__nav-link ak-button"><span>Вход</span></a>
+					<a href="registration.html"
+						class="header__link-register header__nav-link ak-button"><span>Регистрация</span></a>
+					<a href="account.html" class="header__link-account header__nav-link ak-button _none"><span>Личный
+							кабинет</span></a>
+					<button class="header__btn-logout header__nav-link ak-button _none">Выход</button>
+				</div>
+				<div class="ak-header-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -260,7 +266,96 @@
 	</div>
 </footer>
   </div>
-  <script src="js/app.min.js?_v=20230830032936"></script>
+  <div class="modal modal-box-confirm">
+	<div class="modal_content">
+		<div class="modal_body">
+			<div class="modal-confirm">
+				<span class="modal-confirm__span">Вы уверены, что хотите открыть?</span>
+				<div class="modal-confirm__wp-button">
+					<button class="modal-confirm__button ak-button yes">Да</button>
+					<button class="modal-confirm__button ak-button no">Нет</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-box-confirm modal-storage-seasonal-items">
+	<div class="modal_content">
+		<div class="modal_body">
+			<div class="ak-modalStorage">
+				<h3 class="ak-modalStorage__title">Хранение сезонных вещей
+					<div class="modal_close">
+						<span></span>
+						<span></span>
+					</div>
+				</h3>
+				<div class="ak-modalStorage__content">
+					<p class="ak-modalStorage__text">Склады сезонного хранения предоставляют собой боксы различного объема,
+						которые вы можете взять в аренду на любой срок от 1 месяца. Это помещение станет вашей личной, хоть и
+						временной, кладовкой. Доступ на склад осуществляется круглосуточно без предварительного звонка, а значит, вы
+						можете добавить или забрать любую вещь, когда вам нужно.</p>
+					<p class="ak-modalStorage__text">К сезонным вещам относится, в первую очередь, одежда, дачное оборудование,
+						велосипеды, сноуборды и другой спортивный инвентарь. Все эти предметы нужны нам максимум три месяца в году,
+						а остальное время просто пылятся на антресолях. Также условия на наших складах отлично проходят для
+						сезонного хранения шин.</p>
+				</div>
+				<h4 class="ak-modalStorage__title-list">Наши преимущества</h4>
+				<ul class="ak-modalStorage__list">
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/marker.png" alt="icon">
+						<span>удобное расположение складов</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/time.png" alt="icon">
+						<span>доступ к складу 24/7</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/key.png" alt="icon">
+						<span>индивидуальный ключ</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/delivery.png" alt="icon">
+						<span>доставка</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/cart.png" alt="icon">
+						<span>бесплатные тележки для погрузки</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/parking.png" alt="icon">
+						<span>бесплатная парковка</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/online.png" alt="icon">
+						<span>онлайн оформление</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/legal.png" alt="icon">
+						<span>работаем с юридическими и физическими лицами</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/security.png" alt="icon">
+						<span>охрана, сигнализация и видеонаблюдение</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/pay.png" alt="icon">
+						<span>все варианты оплаты</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/discountpng.png" alt="icon">
+						<span>акции и скидки</span>
+					</li>
+					<li class="ak-modalStorage__item">
+						<img src="img/icons/warm.png" alt="icon">
+						<span>всегда тепло и сухо</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+  <script src="js/app.min.js?_v=20230904133647"></script>
 </body>
 
 </html>

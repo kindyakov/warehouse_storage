@@ -6,35 +6,41 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/favicon/Gulp.svg">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230830032936">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230904133647">
 </head>
 
 <body>
 	<div class="ak-wrapper">
 		<header class="header">
-	<div class="header__container ak-container">
-		<div class="header__body">
-			<div class="header__content">
-				<a href="index.html" class="header__logo">
-					<img src="img/logo.png" alt="logo" class="header__logo-img">
-				</a>
-				<nav class="header__navigate">
-					<ul class="header__list">
-						<li class="header__li"><a href="#" class="header__link">Боксы и цены</a></li>
-						<li class="header__li"><a href="box.html" class="header__link">Как выбрать бокс?</a></li>
-						<li class="header__li"><a href="faq.html" class="header__link">FAQ</a></li>
-						<li class="header__li"><a href="services.html" class="header__link">Услуги</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header__wp-buttons" data-da=".header__navigate,479,1">
-				<a href="authorization.html" class="header__btn-auth ak-button"><span>Вход</span></a>
-				<a href="registration.html" class="header__btn-register ak-button"><span>Регистрация</span></a>
-			</div>
-			<div class="ak-header-burger">
-				<span></span>
-				<span></span>
-				<span></span>
+	<div class="header__container">
+		<div class="ak-container">
+			<div class="header__body">
+				<div class="header__content">
+					<a href="index.html" class="header__logo">
+						<img src="img/logo.png" alt="logo" class="header__logo-img">
+					</a>
+					<nav class="header__navigate">
+						<ul class="header__list">
+							<li class="header__li"><a href="#" class="header__link">Боксы и цены</a></li>
+							<li class="header__li"><a href="box.html" class="header__link">Как выбрать бокс?</a></li>
+							<li class="header__li"><a href="faq.html" class="header__link">FAQ</a></li>
+							<li class="header__li"><a href="services.html" class="header__link">Услуги</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__wp-buttons" data-da=".header__navigate,479,1">
+					<a href="authorization.html" class="header__link-auth header__nav-link ak-button"><span>Вход</span></a>
+					<a href="registration.html"
+						class="header__link-register header__nav-link ak-button"><span>Регистрация</span></a>
+					<a href="account.html" class="header__link-account header__nav-link ak-button _none"><span>Личный
+							кабинет</span></a>
+					<button class="header__btn-logout header__nav-link ak-button _none">Выход</button>
+				</div>
+				<div class="ak-header-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -81,38 +87,42 @@
 			<section class="ak-advantages ak-section">
 				<div class="ak-advantages__container ak-container">
 					<h2 class="ak-advantages__title ak-h2">Преимущества хранения вещей</h2>
-					<div class="ak-advantages__body">
+					<div class="ak-advantages__body" data-tabs-init="advantages-tabs">
 						<div class="ak-advantages__content">
 							<ul class="ak-advantages__list">
-								<li class="ak-advantages__item">
+								<li class="ak-advantages__item _my-tabs-btn">
 									<h3 class="ak-advantages__item-title">Удобная зона разгрузки</h3>
 									<p class="ak-advantages__item-text">Можно подогнать автомобиль непосредственно к воротам склада и
 										выгрузить вещи из него прямо на тележку для транспортировки в бокс</p>
 								</li>
-								<li class="ak-advantages__item">
+								<li class="ak-advantages__item _my-tabs-btn">
 									<h3 class="ak-advantages__item-title">Тёплые и сухие боксы</h3>
 									<p class="ak-advantages__item-text">Во всех боксах можно хранить мягкую мебель и иные вещи, требующие
 										бережного обращения</p>
 								</li>
-								<li class="ak-advantages__item">
+								<li class="ak-advantages__item _my-tabs-btn">
 									<h3 class="ak-advantages__item-title">3 уровня безопасности</h3>
 									<p class="ak-advantages__item-text">КПП с круглосуточной охраной на въезде, капитальное здание склада
 										и сам
 										бокс, запертый на замок</p>
 								</li>
-								<li class="ak-advantages__item _active">
+								<li class="ak-advantages__item _my-tabs-btn">
 									<h3 class="ak-advantages__item-title">Доступ к боксам 24/7</h3>
 									<p class="ak-advantages__item-text">Частные клиенты всешда могут забрать нужную им вещь, а юридические
 										лица - принять товар даже ночью</p>
 								</li>
-								<li class="ak-advantages__item">
+								<li class="ak-advantages__item _my-tabs-btn">
 									<h3 class="ak-advantages__item-title">Кафе на территории комплекса</h3>
 									<p class="ak-advantages__item-text">Есть завтраки и бизнес-ланчи</p>
 								</li>
 							</ul>
 						</div>
 						<div class="ak-advantages__wp-img">
-							<img src="img/advantages-img.jpg" alt="advantages-img" class="ak-advantages__img">
+							<img src="img/advantages-img.jpg" alt="advantages-img" class="ak-advantages__img _my-tabs-content">
+							<img src="img/advantages-img.jpg" alt="advantages-img" class="ak-advantages__img _my-tabs-content">
+							<img src="img/advantages-img.jpg" alt="advantages-img" class="ak-advantages__img _my-tabs-content">
+							<img src="img/advantages-img.jpg" alt="advantages-img" class="ak-advantages__img _my-tabs-content">
+							<img src="img/advantages-img.jpg" alt="advantages-img" class="ak-advantages__img _my-tabs-content">
 						</div>
 					</div>
 				</div>
@@ -206,7 +216,7 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20230830032936"></script>
+	<script src="js/app.min.js?_v=20230904133647"></script>
 </body>
 
 </html>
